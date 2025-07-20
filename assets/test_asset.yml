@@ -1,0 +1,4 @@
+name: test_asset
+type: bq.sql
+
+select 1 as test_column
