@@ -6,7 +6,7 @@ materialization:
   type: table
 
 depends:
-  - products
+  - main.products
 
 columns:
   - name: price_range
@@ -33,7 +33,7 @@ WITH price_buckets AS (
             ELSE 'Above $1000'
             END AS price_range,
         stock
-    FROM products
+    FROM main.products
 )
 
 SELECT
