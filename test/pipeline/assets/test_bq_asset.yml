@@ -1,0 +1,5 @@
+name: test_bq_asset
+type: bq.sql
+description: Test BigQuery SQL asset
+
+SELECT * FROM example_table LIMIT 10;
