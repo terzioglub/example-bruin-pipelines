@@ -1,0 +1,3 @@
+name: test_bq_source-2
+type: bq.source
+description: Test BigQuery source asset
