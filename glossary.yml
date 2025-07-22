@@ -1,85 +1,89 @@
 entities:
-    - name: Address
-      description: "An address represent a physical, real-world location that is used across various entities, such as customer or order.\n\nThese addresses can be anywhere in the world, there is no country/geography limitation. \nThe addresses are not validated beforehand, therefore the addresses are not guaranteed to be real.\n"
-      attributes:
-        Country:
-            name: Country
-            description: The country of the address, represents a real country.
-            type: string
-        CountryCode:
-            name: CountryCode
-            description: The ISO country code for the given country.
-            type: string
-        ID:
-            name: ID
-            description: The unique identifier of the address in our systems.
-            type: integer
-        Street:
-            name: Street
-            description: The given street name for the address, depending on the country it may have a different structure.
-            type: string
-    - name: Customer
-      description: Customer is an individual/business that has registered on our platform.
-      attributes:
-        Email:
-            name: Email
-            description: the e-mail address the customer used while registering on our website.
-            type: string
-        ID:
-            name: ID
-            description: The unique identifier of the customer in our systems.
-            type: integer
-        Language:
-            name: Language
-            description: the language the customer picked during registration.
-            type: string
-    - name: Order
-      description: Order is a transaction that represents a purchase of a product/service by a customer.
-      attributes:
-        CustomerID:
-            name: CustomerID
-            description: The unique identifier of the customer who placed the order.
-            type: integer
-        Date:
-            name: Date
-            description: The date when the order was placed.
-            type: date
-        ID:
-            name: ID
-            description: The unique identifier of the order in our systems.
-            type: integer
-        Price:
-            name: Price
-            description: The total price of the order.
-            type: float
-        ProductID:
-            name: ProductID
-            description: The unique identifier of the product that was purchased.
-            type: integer
-        Quantity:
-            name: Quantity
-            description: The number of products that were purchased.
-            type: integer
-    - name: Product
-      description: Product is a good or service that is offered on our platform.
-      attributes:
-        Category:
-            name: Category
-            description: The category of the product.
-            type: string
-        Description:
-            name: Description
-            description: A brief description of the product.
-            type: string
-        ID:
-            name: ID
-            description: The unique identifier of the product in our systems.
-            type: integer
-        Name:
-            name: Name
-            description: The name of the product.
-            type: string
-        Price:
-            name: Price
-            description: The price of the product.
-            type: float
+    Address:
+        name: Address
+        description: "An address represent a physical, real-world location that is used across various entities, such as customer or order.\n\nThese addresses can be anywhere in the world, there is no country/geography limitation. \nThe addresses are not validated beforehand, therefore the addresses are not guaranteed to be real.\n"
+        attributes:
+            Country:
+                name: Country
+                description: The country of the address, represents a real country.
+                type: string
+            CountryCode:
+                name: CountryCode
+                description: The ISO country code for the given country.
+                type: string
+            ID:
+                name: ID
+                description: The unique identifier of the address in our systems.
+                type: integer
+            Street:
+                name: Street
+                description: The given street name for the address, depending on the country it may have a different structure.
+                type: string
+    Customer:
+        name: Customer
+        description: Customer is an individual/business that has registered on our platform.
+        attributes:
+            Email:
+                name: Email
+                description: the e-mail address the customer used while registering on our website.
+                type: string
+            ID:
+                name: ID
+                description: The unique identifier of the customer in our systems.
+                type: integer
+            Language:
+                name: Language
+                description: the language the customer picked during registration.
+                type: string
+    Order:
+        name: Order
+        description: Order is a transaction that represents a purchase of a product/service by a customer.
+        attributes:
+            CustomerID:
+                name: CustomerID
+                description: The unique identifier of the customer who placed the order.
+                type: integer
+            Date:
+                name: Date
+                description: The date when the order was placed.
+                type: date
+            ID:
+                name: ID
+                description: The unique identifier of the order in our systems.
+                type: integer
+            Price:
+                name: Price
+                description: The total price of the order.
+                type: float
+            ProductID:
+                name: ProductID
+                description: The unique identifier of the product that was purchased.
+                type: integer
+            Quantity:
+                name: Quantity
+                description: The number of products that were purchased.
+                type: integer
+    Product:
+        name: Product
+        description: Product is a good or service that is offered on our platform.
+        attributes:
+            Category:
+                name: Category
+                description: The category of the product.
+                type: string
+            Description:
+                name: Description
+                description: A brief description of the product.
+                type: string
+            ID:
+                name: ID
+                description: The unique identifier of the product in our systems.
+                type: integer
+            Name:
+                name: Name
+                description: The name of the product.
+                type: string
+            Price:
+                name: Price
+                description: The price of the product.
+                type: float
