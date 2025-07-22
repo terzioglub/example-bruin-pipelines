@@ -1,6 +1,6 @@
 entities:
-    Address123:
-        name: Address123
+    Address:
+        name: Address
         description: "An address represent a physical, real-world location that is used across various entities, such as customer or order.\n\nThese addresses can be anywhere in the world, there is no country/geography limitation. \nThe addresses are not validated beforehand, therefore the addresses are not guaranteed to be real.\n"
         attributes:
             Country:
