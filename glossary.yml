@@ -1,24 +1,4 @@
 entities:
-    Address:
-        name: Address
-        description: "An address represent a physical, real-world location that is used across various entities, such as customer or order.\n\nThese addresses can be anywhere in the world, there is no country/geography limitation. \nThe addresses are not validated beforehand, therefore the addresses are not guaranteed to be real.\n"
-        attributes:
-            Country:
-                name: Country
-                description: The country of the address, represents a real country.
-                type: string
-            CountryCode:
-                name: CountryCode
-                description: The ISO country code for the given country.
-                type: string
-            ID:
-                name: ID
-                description: The unique identifier of the address in our systems.
-                type: integer
-            Street:
-                name: Street
-                description: The given street name for the address, depending on the country it may have a different structure.
-                type: string
     Customer:
         name: Customer
         description: Customer is an individual/business that has registered on our platform.
@@ -63,6 +43,26 @@ entities:
                 name: Quantity
                 description: The number of products that were purchased.
                 type: integer
+    Osman123:
+        name: Osman123
+        description: "An address represent a physical, real-world location that is used across various entities, such as customer or order.\n\nThese addresses can be anywhere in the world, there is no country/geography limitation. \nThe addresses are not validated beforehand, therefore the addresses are not guaranteed to be real."
+        attributes:
+            Country:
+                name: Country
+                description: The country of the address, represents a real country.
+                type: string
+            CountryCode:
+                name: CountryCode
+                description: The ISO country code for the given country.
+                type: string
+            ID:
+                name: ID
+                description: The unique identifier of the address in our systems.
+                type: integer
+            Street:
+                name: Street
+                description: The given street name for the address, depending on the country it may have a different structure.
+                type: string
     Product:
         name: Product
         description: Product is a good or service that is offered on our platform.
@@ -87,3 +87,7 @@ entities:
                 name: Price
                 description: The price of the product.
                 type: float
+    test-test-test:
+        name: test-test-test
+        description: teafwetgwefsdfdf
+        attributes: {}
