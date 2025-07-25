@@ -1,93 +1,177 @@
 entities:
+    Campaign123:
+        name: Campaign123
+        description: Campaign represents marketing initiatives and promotional activities.
+        attributes:
+            Budget:
+                name: ""
+                description: The allocated budget for the campaign.
+                type: float
+            EndDate:
+                name: ""
+                description: The end date of the campaign.
+                type: date
+            ID:
+                name: ""
+                description: The unique identifier of the campaign.
+                type: integer
+            Name:
+                name: ""
+                description: The name of the marketing campaign.
+                type: string
+            StartDate:
+                name: ""
+                description: The start date of the campaign.
+                type: date
+            Status:
+                name: ""
+                description: The current status of the campaign (active, paused, completed).
+                type: string
     Customer:
         name: Customer
         description: Customer is an individual/business that has registered on our platform.
         attributes:
             Email:
-                name: Email
+                name: ""
                 description: the e-mail address the customer used while registering on our website.
                 type: string
             ID:
-                name: ID
+                name: ""
                 description: The unique identifier of the customer in our systems.
                 type: integer
             Language:
-                name: Language
+                name: ""
                 description: the language the customer picked during registration.
+                type: string
+    Inventory:
+        name: Inventory
+        description: Inventory represents stock management and warehouse operations.
+        attributes:
+            LastUpdated:
+                name: ""
+                description: The date when the inventory was last updated.
+                type: datetime
+            ProductID:
+                name: ""
+                description: The unique identifier of the product in inventory.
+                type: integer
+            Quantity:
+                name: ""
+                description: The current quantity of the product in the warehouse.
+                type: integer
+            ReorderLevel:
+                name: ""
+                description: The minimum quantity that triggers a reorder.
+                type: integer
+            WarehouseID:
+                name: ""
+                description: The unique identifier of the warehouse location.
+                type: integer
+    Lead:
+        name: Lead
+        description: Lead represents potential customers who have shown interest in our products or services.
+        attributes:
+            Company:
+                name: ""
+                description: The company name associated with the lead.
+                type: string
+            CreatedDate:
+                name: ""
+                description: The date when the lead was created.
+                type: date
+            Email:
+                name: ""
+                description: The email address of the lead.
+                type: string
+            ID:
+                name: ""
+                description: The unique identifier of the lead.
+                type: integer
+            Source:
+                name: ""
+                description: The source where the lead was generated (website, social media, etc.).
+                type: string
+            Status:
+                name: ""
+                description: The current status of the lead (new, qualified, converted, lost).
                 type: string
     Order:
         name: Order
         description: Order is a transaction that represents a purchase of a product/service by a customer.
         attributes:
             CustomerID:
-                name: CustomerID
+                name: ""
                 description: The unique identifier of the customer who placed the order.
                 type: integer
             Date:
-                name: Date
+                name: ""
                 description: The date when the order was placed.
                 type: date
             ID:
-                name: ID
+                name: ""
                 description: The unique identifier of the order in our systems.
                 type: integer
             Price:
-                name: Price
+                name: ""
                 description: The total price of the order.
                 type: float
             ProductID:
-                name: ProductID
+                name: ""
                 description: The unique identifier of the product that was purchased.
                 type: integer
             Quantity:
-                name: Quantity
+                name: ""
                 description: The number of products that were purchased.
                 type: integer
-    Osman123:
-        name: Osman123
-        description: "An address represent a physical, real-world location that is used across various entities, such as customer or order.\n\nThese addresses can be anywhere in the world, there is no country/geography limitation. \nThe addresses are not validated beforehand, therefore the addresses are not guaranteed to be real."
-        attributes:
-            Country:
-                name: Country
-                description: The country of the address, represents a real country.
-                type: string
-            CountryCode:
-                name: CountryCode
-                description: The ISO country code for the given country.
-                type: string
-            ID:
-                name: ID
-                description: The unique identifier of the address in our systems.
-                type: integer
-            Street:
-                name: Street
-                description: The given street name for the address, depending on the country it may have a different structure.
-                type: string
     Product:
         name: Product
-        description: Product is a good or service that is offered on our platform.
+        description: Product represents items or services that can be purchased by customers.
         attributes:
             Category:
-                name: Category
-                description: The category of the product.
-                type: string
-            Description:
-                name: Description
-                description: A brief description of the product.
+                name: ""
+                description: The category or classification of the product.
                 type: string
             ID:
-                name: ID
+                name: ""
                 description: The unique identifier of the product in our systems.
                 type: integer
             Name:
-                name: Name
-                description: The name of the product.
+                name: ""
+                description: The name or title of the product.
                 type: string
             Price:
-                name: Price
-                description: The price of the product.
+                name: ""
+                description: The base price of the product.
                 type: float
-    test-test-test:
-        name: test-test-test
-        description: teafwetgwefsdfdf
-        attributes: {}
+            StockQuantity:
+                name: ""
+                description: The current available quantity of the product in stock.
+                type: integer
+    Transaction:
+        name: Transaction
+        description: Transaction represents financial transactions and payment activities.
+        attributes:
+            Amount:
+                name: ""
+                description: The transaction amount.
+                type: float
+            ID:
+                name: ""
+                description: The unique identifier of the transaction.
+                type: integer
+            OrderID:
+                name: ""
+                description: The reference to the associated order.
+                type: integer
+            PaymentMethod:
+                name: ""
+                description: The method used for payment (credit card, bank transfer, etc.).
+                type: string
+            Status:
+                name: ""
+                description: The status of the transaction (pending, completed, failed).
+                type: string
+            TransactionDate:
+                name: ""
+                description: The date and time when the transaction occurred.
+                type: datetime
