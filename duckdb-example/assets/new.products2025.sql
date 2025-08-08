@@ -2,10 +2,11 @@ name: new.products2025
 type: duckdb.sql
 materialization:
     type: table
+owner: data-team-europe
 columns:
     - name: product_id
       type: INTEGER
-      description: Unique identifier for the product
+      description: best products
       primary_key: true
     - name: product_name
       type: VARCHAR
