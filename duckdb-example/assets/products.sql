@@ -5,10 +5,6 @@ type: duckdb.sql
 materialization:
   type: table
 
-depends:
-  - sleep
-    mode: symbolic
-
 columns:
   - name: product_id
     type: INTEGER
