@@ -6,7 +6,7 @@ materialization:
   type: table
 
 depends:
-  - sleep
+  - non_existent
     # mode: symbolic
 
 columns:
