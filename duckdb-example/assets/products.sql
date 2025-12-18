@@ -7,7 +7,7 @@ materialization:
 
 depends:
   - sleep
-    mode: symbolic
+    # mode: symbolic
 
 columns:
   - name: product_id
