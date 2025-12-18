@@ -6,8 +6,8 @@ materialization:
   type: table
 
 depends:
-  - non_existent
-    # mode: symbolic
+  - sleep
+    mode: symbolic
 
 columns:
   - name: product_id
